@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './style.css';
 import './responsiveness.css'
 
@@ -30,7 +31,7 @@ const LoginForm = (props) => {
                 </div>
                 <div className="sign-up-container">
                     <span className="new-here-text">Novo por aqui?</span>
-                    <span className="sign-up-link">Cadastre-se</span>
+                    <Link to="/register"><span className="sign-up-link">Cadastre-se</span></Link> 
                 </div>
             </form>
         </div>

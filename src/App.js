@@ -1,6 +1,10 @@
 import { useEffect, useState } from 'react';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+//Import Pages
 import Login from './view/pages/Login/Login';
+import Register from './view/pages/Register/Register';
+
 import './App.css';
 
 function App() {
@@ -10,10 +14,14 @@ function App() {
 
   // Routes
   const loginRoute = createBrowserRouter([
-	{
-		path: "/login",
-		element: <Login />
-	}
+    {
+      path: "/login",
+      element: <Login />
+    },
+    {
+      path: "/register",
+      element: <Register />
+    }
   ])
 
   useEffect(() => {
