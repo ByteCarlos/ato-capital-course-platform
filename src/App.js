@@ -19,6 +19,7 @@ function App() {
   useEffect(() => {
       const handleResize = () => {
           setWindowWidth(window.innerWidth);
+          console.log("Largura da tela atual: "+window.innerWidth);
       };
       window.addEventListener('resize', handleResize);
       return () => {
