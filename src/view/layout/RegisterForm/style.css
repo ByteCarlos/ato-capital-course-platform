@@ -1,0 +1,110 @@
+.register-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-form-container .register-form {
+    background-color: #000;
+    opacity: 0.9;
+    border-radius: 5px;
+    width: 30%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    padding: 5rem 0rem;
+    margin-top: 50px;
+}
+
+.register-form-container .register-form .form-title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    width: 70%;
+    margin-bottom: 2rem;
+}
+
+.register-form-container .register-form .form-control {
+    height: 45px;
+    width: 73%;
+    margin-bottom: 2.5rem;
+}
+
+.register-form-container .register-form .form-control input {
+    width: 90%;
+    background-color: transparent;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    height: 98%;
+    padding: 1% 4.8% 1%;
+}
+
+.register-form-container .register-form .button-submit-container {
+    width: 73%;
+    height: 45px;
+    margin-bottom: 1.5rem;
+}
+
+.register-form-container .register-form .button-submit-container .button-submit {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #E50914;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+}
+
+.register-form-container .register-form .forgot-password-container {
+    width: 73%;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 5rem;
+}
+
+.register-form-container .register-form .forgot-password-container span {
+    cursor: pointer;
+}
+
+.register-form-container .register-form .remember-me-container {
+    width: 73%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.register-form-container .register-form .remember-me-container input {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+
+.register-form-container .register-form .remember-me-container span {
+    margin-left: 1rem;
+    color: #fff;
+}
+
+.register-form-container .register-form .sign-up-container {
+    width: 73%;
+}
+
+.register-form-container .register-form .sign-up-container .new-here-text {
+    color: #ccc;
+}
+
+.register-form-container .register-form .sign-up-container .sign-up-link {
+    color: #fff;
+    font-weight: 500;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
