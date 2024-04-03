@@ -15,7 +15,7 @@ const LoginForm = (props) => {
                     <input className="email-fieldset" type="text" name="email" placeholder="Email ou número de telefone"/>
                 </div>
                 <div className="form-control">
-                    <input className="password-fieldset" type="text" name="password" placeholder="Senha" />
+                    <input className="password-fieldset" type="password" name="password" placeholder="Senha" />
                 </div>
                 <div className="button-submit-container">
                     <button className="button-submit" data-button-submit>Entrar</button>

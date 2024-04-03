@@ -28,19 +28,20 @@
 
 .login-form-container .login-form .form-control {
     height: 45px;
+    width: 73%;
     margin-bottom: 2.5rem;
 }
 
 .login-form-container .login-form .form-control input {
-    width: 300px;
+    width: 90%;
     background-color: transparent;
     font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
     font-weight: bold;
     border: 1px solid #fff;
     color: #fff;
     border-radius: 5px;
-    height: 100%;
-    padding: 0.5rem 1rem 0.5rem;
+    height: 98%;
+    padding: 1% 4.8% 1%;
 }
 
 .login-form-container .login-form .button-submit-container {
