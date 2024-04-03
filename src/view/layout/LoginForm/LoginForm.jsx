@@ -1,12 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import './style.css';
 import './responsiveness.css'
 
 const LoginForm = (props) => {
+    const [formData, setFormData] = useState({
+        email: '',
+        password: '',
+    });
+
+    const handleChange = (event) => {
+        const {name, value} = event.target;
+        setFormData(prevState => ({
+            ...prevState,
+            [name]: value
+        }))
+    }
 
     const onSubmit = () => {
-        console.log('submit...')
+        try {
+            // @todo implementar algoritmo para chamar 
+            // uma instancia Service para a rota da API
+        } catch (error) {
+            console.log(error);
+        }
     }
 
     return (
@@ -14,10 +31,10 @@ const LoginForm = (props) => {
             <form className="login-form" onSubmit={onSubmit} data-form>
                 <h4 className="form-title">Entrar</h4>
                 <div className="form-control">
-                    <input className="email-fieldset" type="text" name="email" placeholder="Email ou número de telefone"/>
+                    <input onChange={handleChange} className="email-fieldset" type="text" name="email" placeholder="Email ou número de telefone"/>
                 </div>
                 <div className="form-control">
-                    <input className="password-fieldset" type="password" name="password" placeholder="Senha" />
+                    <input onChange={handleChange} className="password-fieldset" type="password" name="password" placeholder="Senha" />
                 </div>
                 <div className="button-submit-container">
                     <button className="button-submit" data-button-submit>Entrar</button>
