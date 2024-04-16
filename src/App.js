@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from './view/pages/Login/Login';
+import PersonalData from './view/pages/PersonalData/PersonalData';
 import './App.css';
 
 function App() {
@@ -9,11 +10,15 @@ function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   // Routes
-  const loginRoute = createBrowserRouter([
+  const routes = createBrowserRouter([
 	{
 		path: "/login",
 		element: <Login />
-	}
+	},
+  {
+    path: "/personaldata",
+    element: <PersonalData />
+  }
   ])
 
   useEffect(() => {
@@ -29,7 +34,7 @@ function App() {
   return (
     <div className='main-container'>
        {/* @todo adicionar o componente de loading */}
-    	<RouterProvider router={loginRoute} />
+    	<RouterProvider router={routes} />
     </div>
   );
 }
