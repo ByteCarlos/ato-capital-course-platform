@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 //Import Pages
 import Login from './view/pages/Login/Login';
 import PersonalData from './view/pages/PersonalData/PersonalData';
+import ForgotPassword from './view/pages/ForgotPassword/ForgotPassword';
 import Register from './view/pages/Register/Register';
 
 import './App.css';
@@ -12,7 +13,7 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [loadingText, setLoadingText] = useState('');
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
+ 
   // Routes
   const routes = createBrowserRouter([
 	{
@@ -22,6 +23,10 @@ function App() {
   {
     path: "/register",
     element: <Register />
+  },
+  {
+    path: "/forgotpassword",
+    element: <ForgotPassword />
   },
   {
     path: "/personaldata",
