@@ -1,0 +1,111 @@
+.personal-data-form-container {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.personal-data-form-container a {
+    text-decoration: none;
+}
+
+.personal-data-form-container .account-data{
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    gap: 100px; 
+    font-family: 'Bask';
+    font-weight: 600;
+    margin: 30px;
+}
+
+@media (max-width: 700px) {
+    .personal-data-form-container .account-data {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .user-icon-container {
+        text-align: center;
+    }
+}
+
+.personal-data-form-container .user-info-container h1 {
+    margin-bottom: 56px;
+    font-family: 'Bebas Neue'; 
+}
+
+.personal-data-form-container .user-info-container h2 {
+    border-bottom: 2px solid;
+    margin-bottom: 70px;
+    font-family: 'Bebas Neue'; 
+}
+
+.personal-data-form-container .payment-information { 
+    display: flex;
+    align-items: center; 
+    padding-bottom: 70px;
+    border-bottom: 2px solid;
+}
+
+.personal-data-form-container .payment-information div {
+    margin-right: 110px;
+}
+
+.personal-data-form-container .payment-information span {
+    margin-right: 20px;
+}
+
+.personal-data-form-container .registration-data {
+    margin-top: 40px;
+    display: flex;
+    gap: 180px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid;
+}
+
+@media (max-width:700px) {
+    .personal-data-form-container .registration-data {
+        gap: 90px;
+    }
+}
+
+.personal-data-form-container .registration-data span {
+    display: block;
+    margin-bottom: 4px;
+    max-width: 40ch;
+}
+
+.personal-data-form-container .change-data {
+    margin-top: 40px;
+    display: flex;
+    gap: 180px;
+    margin-bottom: 85px;
+}
+
+.personal-data-form-container .change-data a {
+    color: #0032E4;
+    display: block;
+    text-decoration: underline;
+    margin-bottom: 6px;
+}
+
+@media (max-width: 700px) {
+    .personal-data-form-container .change-data {
+        gap: 100px;
+    }
+}
+
+.personal-data-form-container .button {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 2px solid;
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    
+}
+
+.personal-data-form-container .button-exit {
+    color: white;
+    background-color: rgba(199, 22, 22);
+    padding: 9px 18px;
+    border: solid 2px #000;
+    border-radius: 19px;
+    margin-bottom: 4px;
+}

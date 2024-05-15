@@ -1,0 +1,18 @@
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: black;
+    padding: 26px;
+    margin-bottom: 70px;
+}
+
+.personal-data-container a {
+    text-decoration: none;
+}
+
+
+
+

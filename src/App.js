@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 //Import Pages
 import Login from './view/pages/Login/Login';
+import PersonalData from './view/pages/PersonalData/PersonalData';
 import Register from './view/pages/Register/Register';
 
 import './App.css';
@@ -13,15 +14,15 @@ function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   // Routes
-  const loginRoute = createBrowserRouter([
-    {
-      path: "/login",
-      element: <Login />
-    },
-    {
-      path: "/register",
-      element: <Register />
-    }
+  const routes = createBrowserRouter([
+	{
+		path: "/login",
+		element: <Login />
+	},
+  {
+    path: "/personaldata",
+    element: <PersonalData />
+  }
   ])
 
   useEffect(() => {
@@ -38,7 +39,7 @@ function App() {
   return (
     <div className='main-container'>
        {/* @todo adicionar o componente de loading */}
-    	<RouterProvider router={loginRoute} />
+    	<RouterProvider router={routes} />
     </div>
   );
 }
