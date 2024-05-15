@@ -1,9 +1,9 @@
-.container {
+.personal-data-container .container {
     max-width: 1500px;
     margin: 0 auto;
 }
 
-header{
+.personal-data-container header{
     background-color: black;
     padding: 26px;
     margin-bottom: 70px;
