@@ -2,6 +2,7 @@ import React from 'react';
 import masterCard from '../../../assets/img/master_card.png';
 import userIcon from '../../../assets/img/user_icon.png';
 import './style.css';
+import { Link } from 'react-router-dom';
 
 const PersonalDataForm = (props) => {
     return (
@@ -46,7 +47,7 @@ const PersonalDataForm = (props) => {
                         </div>
                     </div>
                     <div className="button">
-                        <a className="button-exit" href="#">sair</a>
+                        <Link className="button-exit" to="/login">sair</Link>
                     </div>
                 </div>
             </div>
