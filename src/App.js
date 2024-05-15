@@ -20,6 +20,10 @@ function App() {
 		element: <Login />
 	},
   {
+    path: "/register",
+    element: <Register />
+  },
+  {
     path: "/personaldata",
     element: <PersonalData />
   }
