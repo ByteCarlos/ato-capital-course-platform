@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 //Import Pages
 import Login from './view/pages/Login/Login';
 import PersonalData from './view/pages/PersonalData/PersonalData';
+import MyStudies from './view/pages/MyStudies/MyStudies';
 import Register from './view/pages/Register/Register';
 
 import './App.css';
@@ -35,6 +36,7 @@ function App() {
           <Route exact path="/" component={Login} />
           <Route exact path="/register" component={Register} />
           <Route exact path="/personaldata" component={PersonalData} />
+          <Route exact path="/mystudies" component={MyStudies} />
         </Switch>
       </BrowserRouter>
     </div>
