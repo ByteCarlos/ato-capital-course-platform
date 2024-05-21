@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
 
 //Import Pages
 import Login from './view/pages/Login/Login';
@@ -16,22 +17,6 @@ function App() {
   // eslint-disable-next-line
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  // Routes
-  const routes = createBrowserRouter([
-	{
-		path: "/",
-		element: <Login />
-	},
-  {
-    path: "/register",
-    element: <Register />
-  },
-  {
-    path: "/personaldata",
-    element: <PersonalData />
-  }
-  ])
-
   useEffect(() => {
       const handleResize = () => {
           setWindowWidth(window.innerWidth);
@@ -45,8 +30,13 @@ function App() {
 
   return (
     <div className='main-container'>
-       {/* @todo adicionar o componente de loading */}
-    	<RouterProvider router={routes} />
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={Login} />
+          <Route exact path="/register" component={Register} />
+          <Route exact path="/personaldata" component={PersonalData} />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
