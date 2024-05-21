@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from './view/pages/Login/Login';
 import PersonalData from './view/pages/PersonalData/PersonalData';
+import MyStudies from './view/pages/MyStudies/MyStudies';
 import './App.css';
 
 function App() {
@@ -18,7 +19,12 @@ function App() {
   {
     path: "/personaldata",
     element: <PersonalData />
+  },
+  {
+    path: "/mystudies",
+    element: <MyStudies />
   }
+
   ])
 
   useEffect(() => {
