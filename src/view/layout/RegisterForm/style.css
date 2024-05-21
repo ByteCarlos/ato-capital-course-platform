@@ -1,12 +1,11 @@
-.login-form-container {
+.register-form-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.login-form-container .login-form {
+.register-form-container .register-form {
     background-color: rgba(0, 0, 0, 0.9);
-    opacity: 0.9;
     border-radius: 5px;
     width: 30%;
     min-height: 500px;
@@ -18,7 +17,7 @@
     margin-top: 50px;
 }
 
-.login-form-container .login-form .form-title {
+.register-form-container .register-form .form-title {
     color: #fff;
     font-size: 2rem;
     font-weight: 700;
@@ -26,13 +25,13 @@
     margin-bottom: 2rem;
 }
 
-.login-form-container .login-form .form-control {
+.register-form-container .register-form .form-control {
     height: 45px;
     width: 73%;
     margin-bottom: 2.5rem;
 }
 
-.login-form-container .login-form .form-control input {
+.register-form-container .register-form .form-control input {
     width: 90%;
     background-color: transparent;
     font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
@@ -44,13 +43,13 @@
     padding: 1% 4.8% 1%;
 }
 
-.login-form-container .login-form .button-submit-container {
+.register-form-container .register-form .button-submit-container {
     width: 73%;
     height: 45px;
     margin-bottom: 1.5rem;
 }
 
-.login-form-container .login-form .button-submit-container .button-submit {
+.register-form-container .register-form .button-submit-container .button-submit {
     height: 100%;
     width: 100%;
     cursor: pointer;
@@ -63,18 +62,18 @@
     color: #fff;
 }
 
-.login-form-container .login-form .forgot-password-container {
+.register-form-container .register-form .forgot-password-container {
     width: 73%;
     text-align: center;
     color: #fff;
     margin-bottom: 5rem;
 }
 
-.login-form-container .login-form .forgot-password-container span {
+.register-form-container .register-form .forgot-password-container span {
     cursor: pointer;
 }
 
-.login-form-container .login-form .remember-me-container {
+.register-form-container .register-form .remember-me-container {
     width: 73%;
     display: inline-flex;
     align-items: center;
@@ -82,27 +81,27 @@
     margin-bottom: 1.5rem;
 }
 
-.login-form-container .login-form .remember-me-container input {
+.register-form-container .register-form .remember-me-container input {
     height: 20px;
     width: 20px;
     cursor: pointer;
 }
 
 
-.login-form-container .login-form .remember-me-container span {
+.register-form-container .register-form .remember-me-container span {
     margin-left: 1rem;
     color: #fff;
 }
 
-.login-form-container .login-form .sign-up-container {
+.register-form-container .register-form .sign-up-container {
     width: 73%;
 }
 
-.login-form-container .login-form .sign-up-container .new-here-text {
+.register-form-container .register-form .sign-up-container .new-here-text {
     color: #ccc;
 }
 
-.login-form-container .login-form .sign-up-container .sign-up-link {
+.register-form-container .register-form .sign-up-container .sign-up-link {
     color: #fff;
     font-weight: 500;
     margin-left: 0.5rem;
