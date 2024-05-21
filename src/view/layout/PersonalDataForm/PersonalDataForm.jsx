@@ -9,7 +9,7 @@ const PersonalDataForm = (props) => {
         <main className="personal-data-form-container">
             <div className="account-data">
                 <div className='user-icon-container'>
-                    <img src={userIcon} />
+                    <img src={userIcon} alt='user icon' />
                 </div>
                 <div className='user-info-container'>
                     <h1>Conta :</h1>
@@ -18,7 +18,7 @@ const PersonalDataForm = (props) => {
                         <div>
                             <span>Informações de pagamento: </span>
                         </div>
-                        <img src={masterCard} />
+                        <img src={masterCard} alt='master card icon'/>
                         <span> **** **** *** 3100 </span>
                         <span>Expira em 00/00</span>
                     </div>
@@ -37,13 +37,13 @@ const PersonalDataForm = (props) => {
                     </div>
                     <div className="change-data">
                         <div className='change-data-option'>
-                            <a href="#">Alterar nome</a>
-                            <a href="#">Alterar email</a>
-                            <a href="#">Alterar senha</a>
+                           <Link to="/">Alterar nome</Link>
+                           <Link to="/">Alterar email</Link>
+                           <Link to="/">Alterar senha</Link>
                         </div>
                         <div className='change-data-option'>
-                            <a href="#">Alterar endereco</a>
-                            <a href="#">Alterar telefone</a>
+                           <Link to="/">Alterar endereco</Link>
+                           <Link to="/">Alterar telefone</Link>
                         </div>
                     </div>
                     <div className="button">

@@ -4,6 +4,7 @@ import './style.css';
 import './responsiveness.css'
 
 const LoginForm = (props) => {
+    // eslint-disable-next-line
     const [formData, setFormData] = useState({
         email: '',
         password: '',

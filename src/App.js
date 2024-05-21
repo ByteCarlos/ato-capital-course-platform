@@ -9,8 +9,11 @@ import Register from './view/pages/Register/Register';
 import './App.css';
 
 function App() {
+  // eslint-disable-next-line
   const [loading, setLoading] = useState(false);
+  // eslint-disable-next-line
   const [loadingText, setLoadingText] = useState('');
+  // eslint-disable-next-line
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   // Routes
