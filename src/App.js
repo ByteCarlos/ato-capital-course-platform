@@ -8,6 +8,7 @@ import PersonalData from './view/pages/PersonalData/PersonalData';
 import ForgotPassword from './view/pages/ForgotPassword/ForgotPassword';
 import MyStudies from './view/pages/MyStudies/MyStudies';
 import Register from './view/pages/Register/Register';
+import Home from './view/pages/Home/Home';
 
 import './App.css';
 
@@ -34,11 +35,12 @@ function App() {
     <div className='main-container'>
       <BrowserRouter>
         <Switch>
-          {/* @todo make a home component */}
+          {/* @todo make a main page component */}
           <Route exact path="/" component={Login} />
           <Route path="/login" component={Login} />
           <Route path="/register" component={Register} />
           <Route path="/forgotpassword" component={ForgotPassword} />
+          <Route path="/home" component={Home} />
           <Route path="/personaldata" component={PersonalData} />
           <Route path="/mystudies" component={MyStudies} />
         </Switch>
