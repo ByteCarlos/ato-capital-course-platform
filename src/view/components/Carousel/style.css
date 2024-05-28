@@ -1,0 +1,14 @@
+.carousel-container {
+    display: inline-flex;
+    margin: 30px 0px;
+}
+
+.carousel-container .left-arrow img,
+.carousel-container .right-arrow img  {
+    cursor: pointer;
+}
+
+.carousel-container .course-banner {
+    margin-inline: 10px;
+    cursor: pointer;
+}

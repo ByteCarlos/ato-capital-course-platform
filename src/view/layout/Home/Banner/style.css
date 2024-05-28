@@ -29,6 +29,7 @@
 .home-container .banner-container .right-container {
     background-image: url('../../../../assets/img/html.png');
     background-position: center;
+    cursor: pointer;
     background-size: 100%;
     background-repeat: no-repeat;
     width: 40%;
