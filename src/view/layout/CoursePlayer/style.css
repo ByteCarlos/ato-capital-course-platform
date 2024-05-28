@@ -1,0 +1,28 @@
+.course-view-container .course-player-container {
+    padding: 40px;
+}
+
+.course-view-container .course-player-container
+.course-player-header {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.course-view-container .course-player-container
+.course-player-content h4{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30.26px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.course-view-container .course-player-container
+.sinopse {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.78px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

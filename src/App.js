@@ -11,6 +11,7 @@ import Register from './view/pages/Register/Register';
 import Home from './view/pages/Home/Home';
 
 import './App.css';
+import CourseView from './view/pages/CourseView/CourseView';
 
 function App() {
   // eslint-disable-next-line
@@ -41,6 +42,7 @@ function App() {
           <Route path="/register" component={Register} />
           <Route path="/forgotpassword" component={ForgotPassword} />
           <Route path="/home" component={Home} />
+          <Route path="/courseview" component={CourseView} />
           <Route path="/personaldata" component={PersonalData} />
           <Route path="/mystudies" component={MyStudies} />
         </Switch>
