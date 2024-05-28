@@ -1,38 +1,23 @@
 import { useEffect, useState } from 'react';
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
 
 //Import Pages
 import Login from './view/pages/Login/Login';
 import PersonalData from './view/pages/PersonalData/PersonalData';
 import ForgotPassword from './view/pages/ForgotPassword/ForgotPassword';
+import MyStudies from './view/pages/MyStudies/MyStudies';
 import Register from './view/pages/Register/Register';
 
 import './App.css';
 
 function App() {
+  // eslint-disable-next-line
   const [loading, setLoading] = useState(false);
+  // eslint-disable-next-line
   const [loadingText, setLoadingText] = useState('');
+  // eslint-disable-next-line
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
- 
-  // Routes
-  const routes = createBrowserRouter([
-	{
-		path: "/login",
-		element: <Login />
-	},
-  {
-    path: "/register",
-    element: <Register />
-  },
-  {
-    path: "/forgotpassword",
-    element: <ForgotPassword />
-  },
-  {
-    path: "/personaldata",
-    element: <PersonalData />
-  }
-  ])
 
   useEffect(() => {
       const handleResize = () => {
@@ -47,8 +32,15 @@ function App() {
 
   return (
     <div className='main-container'>
-       {/* @todo adicionar o componente de loading */}
-    	<RouterProvider router={routes} />
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={Login} />
+          <Route path="/register" component={Register} />
+          <Route path="/forgotpassword" component={ForgotPassword} />
+          <Route path="/personaldata" component={PersonalData} />
+          <Route path="/mystudies" component={MyStudies} />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
