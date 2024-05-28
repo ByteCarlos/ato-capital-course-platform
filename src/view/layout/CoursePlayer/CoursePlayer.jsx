@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import './style.css';
 import backArrow from '../../../assets/img/back-arrow.png';
+import userIcon from '../../../assets/img/user_icon.png';
 
 const CoursePlayer = (props) => {
     return (
@@ -23,6 +24,25 @@ const CoursePlayer = (props) => {
                     </p>
                 </div>
                 <hr />
+                <div className="comments-container">
+                    <h4>Comentários:</h4>
+                    <div className="comment-input">
+                        <img src={userIcon} alt="user icon"/>
+                        <input type="text" name="" id="" placeholder="Adicione um comentário" />
+                    </div>
+                    <div className="comment-text">
+                        <img src={userIcon} alt="user icon"/>
+                        <div className="content">
+                            Sempre muito didático! Estou amando o curso!
+                        </div>
+                    </div>
+                    <div className="comment-text">
+                        <img src={userIcon} alt="user icon"/>
+                        <div className="content">
+                            O meu ta dando erro no 24:47.
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );

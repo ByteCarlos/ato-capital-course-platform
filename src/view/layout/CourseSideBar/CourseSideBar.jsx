@@ -14,6 +14,7 @@ const CourseSideBar = (props) => {
             <MiniPlayer lock={true} order={2}/>
             <MiniPlayer lock={true} order={3}/>
             <MiniPlayer lock={true} order={4}/>
+            <MiniPlayer lock={true} order={5}/>
         </div>
     );
 }
