@@ -1,0 +1,18 @@
+.course-view-container .course-side-bar-container {
+    background-color: #3a3939;
+    width: 20%;
+    padding: 30px;
+}
+
+.course-view-container .course-side-bar-container .side-button-container img {
+    cursor: pointer;
+}
+
+.course-view-container .course-side-bar-container h4 {
+    color: #E42222;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 37.5px;
+    text-align: center;
+    margin-top: 10px;
+}

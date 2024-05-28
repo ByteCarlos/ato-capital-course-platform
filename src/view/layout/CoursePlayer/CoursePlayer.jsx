@@ -8,7 +8,6 @@ const CoursePlayer = (props) => {
         <div className="course-player-container">
             <div className="course-player-header">
                 <Link to="/home"><img src={backArrow} alt="Botão de Voltar"/></Link>
-                
             </div>
             <div className="course-player-content">
                 <h4>Capítulo 1 Aula 1 – O começo</h4>
