@@ -1,9 +1,10 @@
 .home-container .home-header {
     background: linear-gradient(270deg, rgba(217, 217, 217, 0) 0%, rgba(115, 115, 115, 0.35) 100%);
     display: inline-flex;
-    width: 94.4%;
+    width: 95.3%;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 0px;
 }
 
 .home-container .home-header .left-header-content {
