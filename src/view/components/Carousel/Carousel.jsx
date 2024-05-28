@@ -8,21 +8,25 @@ const Carousel = (props) => {
 
     const images = props.coursesImages;
 
+    function redirectToCourseView() {
+        window.location.href = '/courseview';
+    }
+
     return (
         <div className="carousel-container">
             <div className="left-arrow">
                 <img src={arrowLeft} alt="Seta para esquerda" />
             </div>
-            <div className="course-banner">
+            <div className="course-banner" onClick={redirectToCourseView}>
                 <img src={images.htmlImage} alt="course"/>
             </div>
-            <div className="course-banner">
+            <div className="course-banner" onClick={redirectToCourseView}>
                 <img src={images.cssImage} alt="course"/>
             </div>
-            <div className="course-banner">
+            <div className="course-banner" onClick={redirectToCourseView}>
                 <img src={images.reactImage} alt="course"/>
             </div>
-            <div className="course-banner">
+            <div className="course-banner" onClick={redirectToCourseView}>
                 <img src={images.nodeImage} alt="course"/>
             </div>
             <div className="right-arrow">
