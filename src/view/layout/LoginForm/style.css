@@ -63,14 +63,14 @@
     color: #fff;
 }
 
-.login-form-container .login-form .forgot-password-container {
+.login-form-container .login-form .forgot-password-button-container {
     width: 73%;
     text-align: center;
     color: #fff;
     margin-bottom: 5rem;
 }
 
-.login-form-container .login-form .forgot-password-container span {
+.login-form-container .login-form .forgot-password-button-container span {
     cursor: pointer;
 }
 
@@ -107,4 +107,9 @@
     font-weight: 500;
     margin-left: 0.5rem;
     cursor: pointer;
+}
+
+.login-form-container .login-form .forgot-password-button-container a {
+    text-decoration: none;
+    color: white;
 }

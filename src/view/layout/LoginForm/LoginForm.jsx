@@ -40,8 +40,8 @@ const LoginForm = (props) => {
                 <div className="button-submit-container">
                     <button className="button-submit" data-button-submit>Entrar</button>
                 </div>
-                <div className="forgot-password-container">
-                    <span>Esqueceu a senha?</span>
+                <div className="forgot-password-button-container">
+                    <Link to="/forgotpassword"><span>Esqueceu a senha?</span></Link>
                 </div>
                 <div className="remember-me-container">
                     <input type="checkbox" name="remember" id="remember" />
