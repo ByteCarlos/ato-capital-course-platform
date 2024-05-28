@@ -18,10 +18,12 @@ const LoginForm = (props) => {
         }))
     }
 
-    const onSubmit = () => {
+    const onSubmit = (event) => {
         try {
-            // @todo implementar algoritmo para chamar 
-            // uma instancia Service para a rota da API
+            event.preventDefault();
+            if(formData.email === "admin@admin.com" && formData.password === "admin") {
+                window.location.href = '/home';
+            }
         } catch (error) {
             console.log(error);
         }
