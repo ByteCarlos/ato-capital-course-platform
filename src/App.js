@@ -34,7 +34,9 @@ function App() {
     <div className='main-container'>
       <BrowserRouter>
         <Switch>
+          {/* @todo make a home component */}
           <Route exact path="/" component={Login} />
+          <Route path="/login" component={Login} />
           <Route path="/register" component={Register} />
           <Route path="/forgotpassword" component={ForgotPassword} />
           <Route path="/personaldata" component={PersonalData} />

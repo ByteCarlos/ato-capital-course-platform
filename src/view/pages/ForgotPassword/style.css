@@ -1,9 +1,14 @@
+.forgot-password-container {
+    background: black;
+}
+
 .forgot-password-container header {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
     width: 96.6%;
     padding: 20px;
+    background: transparent;
 }
 
 .forgot-password-container header .page-title {

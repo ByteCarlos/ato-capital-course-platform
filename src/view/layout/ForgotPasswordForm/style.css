@@ -4,13 +4,17 @@
     height: 50%;
     align-items: center;
     font-family: "Roboto", sans-serif;
-    background-color: aqua;
+    background: transparent;
 }
 
 .forgot-password-form-container .form-container {
     background-color: #F3F3F3;
-    height: 80%;
-    padding: 10rem 2rem;
+    height: 25rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .forgot-password-form-container .form-container .form h4 {
