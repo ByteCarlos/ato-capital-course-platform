@@ -10,7 +10,7 @@ const Header = (props) => {
                 <h4 className="business-name">ATOS CAPITAL</h4>
                 <div className="links-container">
                     <Link to="/home">Categorias</Link>  
-                    <Link to="/home">Meus Cursos</Link>
+                    <Link to="/mystudies">Meus Cursos</Link>
                     <Link to="/home">Favoritos</Link>
                 </div>
             </div>
